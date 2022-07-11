@@ -1,0 +1,7 @@
+x = y = input("Ввод числа: ")
+y = int(y)
+a1, y = divmod(y, 10000)
+a2, y = divmod(y, 1000)
+a3, y = divmod(y, 100)
+a4, y = divmod(y, 10)
+print(y,a4,a3,a2,a1,sep="")
