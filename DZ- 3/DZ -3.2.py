@@ -1,6 +1,10 @@
-l = [3,5,6,7,8,9,2,5,5]
-l1 = len(l)/2
-l2 = l[:int(l1)]
-l3 = l[int(l1):]
-l4 = [l2, l3]
-print(l4)
+l = [2,6,5,9,7,9,5,]
+l1 = int(len(l) / 2)
+l3 = len(l)
+if l3 % 2 == 0:
+    l, l2 = l[:l1], l[l1:]
+    print([l, l2])
+
+else:
+    l, l2 = l[:l1 + 1], l[l1 + 1:]
+    print([l, l2])
