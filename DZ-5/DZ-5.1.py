@@ -1,41 +1,33 @@
 x = float(input("Введите число: "))
-y = float(input("Введите второе число: "))
+l = float(input("Введите второе число: "))
 с = input("Выберите действие  +,-,/,* : ")
-a = ("N")
-m = ("Y")
 if с == "+":
-    print(x+y)
-    b = str(input("Хотите продолжить? (Y/N): "))
+    print(x+l)
 elif с == "-":
-    print(x-y)
-    b = str(input("Хотите продолжить? (Y/N): "))
+    print(x-l)
 elif с == "*":
-    print(x*y)
-    b = str(input("Хотите продолжить? (Y/N): "))
+    print(x*l)
 elif с == "/":
-    if y != 0:
-        print(x/y)
-        b = str(input("Хотите продолжить? (Y/N): "))
-    else:
-        print("на ноль не делится")
-while b == "Y":
+    if l != 0:
+        print(x/l)
+else:
+    print("на ноль не делится")
+b = input("Хотите продолжить? (y/n): ")
+while b == "y":
     x = float(input("Введите число: "))
-    y = float(input("Введите второе число: "))
+    l = float(input("Введите второе число: "))
     с = input("Выберите действие  +,-,/,* : ")
     if с == "+":
-        print(x + y)
-        b = str(input("Хотите продолжить? (Y/N): "))
+        print(x + l)
     elif с == "-":
-        print(x - y)
-        b = str(input("Хотите продолжить? (Y/N): "))
+        print(x - l)
     elif с == "*":
-        print(x * y)
-        b = str(input("Хотите продолжить? (Y/N): "))
+        print(x * l)
     elif с == "/":
-        if y != 0:
-            print(x / y)
-            b = str(input("Хотите продолжить? (Y/N): "))
+        if l != 0:
+            print(x / l)
         else:
             print("на ноль не делится")
-else:
+    b = input("Хотите продолжить? (y/n): ")
+if b == "n":
     print("Робота окончена")
