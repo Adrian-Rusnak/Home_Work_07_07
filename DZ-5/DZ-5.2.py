@@ -1,7 +1,8 @@
 import keyword
-a = keyword.kwlist
+a = a = keyword.kwlist
+
 b = input("Введите переменную:  ")
-if b == a:
-    print(False)
-else:
-    print(True)
+for i in a :
+    if i == b:
+        print(False)
+
