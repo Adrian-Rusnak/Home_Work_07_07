@@ -5,7 +5,7 @@ b = input("Введите переменную: ")
 for i in a:
     if i == b:
         print(False)
-if b[0]==b.isupper():
+if b.isupper():
     print(False)
 if b.istitle():
     print(False)
