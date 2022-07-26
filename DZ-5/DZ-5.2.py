@@ -7,9 +7,9 @@ for i in a :
         result=False
 if [s for s in b[0] if s in '''!"#$%&'()*+,-./:;<=>?@[\]^`{|}~''']:
     result = False
-o = b.isupper()
-if o == False:
-    result = False
+for i in b :
+    if i.isupper():
+        result=False
 if b.istitle():
     result=False
 if b.isdigit():
