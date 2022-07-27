@@ -8,6 +8,6 @@ h = h.strip()
 for i in h:
     if i in x:
         h = h.replace(i,"")
-h = h.ljust(140)
+h[-1]= h[:140]
 
 print(h)
