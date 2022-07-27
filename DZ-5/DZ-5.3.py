@@ -1,4 +1,12 @@
-hashtag = input("Введите строку: #").strip().title()
-x = "".join(hashtag)
-# i like python
-print(x)
+import string
+x = string.punctuation
+h = input()
+h = h.title()
+h = h.split()
+h = ''.join(h)
+h = h.strip()
+for i in h:
+    if i in x:
+        h = h.replace(i,"")
+
+print(h)
