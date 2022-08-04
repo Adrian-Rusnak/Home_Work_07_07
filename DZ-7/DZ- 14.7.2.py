@@ -1,12 +1,10 @@
-def propozition(A, B):
-    A = A.title()
-    B = ''.join(B)
-    if B[-1] ==".":
-        return A, B
+def propozition(a):
+    a = [i for i in a]
+    a[0] = a[0].upper()
+    if a[-1] =='.':
+        return ''.join(a)
     else:
-        B = B.split()
-        B.append(".")
-    B = ''.join(B)
-    return A,B
-d = propozition('Greetings ', 'friends.')
+        a.append(".")
+        return''.join(a)
+d = propozition('greetings friends')
 print(d)
