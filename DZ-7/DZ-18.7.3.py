@@ -2,7 +2,7 @@ v=0
 
 def name(a , c):
     v =a.find(c)
-    if v == a.find(c):
+    if v !=-1:
         v = a.find(c, v +1)
         if v == -1:
             return None
