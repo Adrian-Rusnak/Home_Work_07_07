@@ -9,7 +9,7 @@ def is_polindrome(a):
     while True:
         if a[::1] ==b:
             return True
-            break
+
         if a != b:
             return False
         continue
