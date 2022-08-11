@@ -7,4 +7,4 @@ def chislo(a):
             b.append(i)
 
     return b
-print(chislo([20,20,30,30,40]))
+print(chislo([1,2,1,1,1]))
