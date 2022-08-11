@@ -2,15 +2,10 @@ import string
 n = string.punctuation
 a = input("Введите предложени: ").lower()
 def is_polindrome(a):
-    for i in a:
-        if i in n:
+    a = a.replace(" ", "")
+    for i in n:
+
             a = a.replace(i,'')
     b = a[::-1]
-    while True:
-        if a[::1] ==b:
-            return True
-
-        if a != b:
-            return False
-        continue
+    return b ==a
 print(is_polindrome(a))
