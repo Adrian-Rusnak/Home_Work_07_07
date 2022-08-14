@@ -14,7 +14,7 @@ print(massiv([5,-5]))
 
 
 
-m =(5,-5)
+m =(1,2,3)
 if m==():
     print(0)
 else:
