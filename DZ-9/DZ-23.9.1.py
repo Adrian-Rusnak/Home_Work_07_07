@@ -11,3 +11,12 @@ def massiv(a):
             c=i
     return b-c
 print(massiv([5,-5]))
+
+
+
+m =(5,-5)
+if m==():
+    print(0)
+else:
+    c = max(m)-min(m)
+    print(c)
