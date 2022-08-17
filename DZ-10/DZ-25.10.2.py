@@ -1,12 +1,13 @@
-x = list(input('Ввод'))
-def gen(x):
-    return x**x[0]
-def some(start=gen):
-    while some <= gen:
-        yield start
-        start =gen(start)
-v = some()
 
-print(list(some()))
+def gen(n):
+    n = n**n
+def some(gen):
+    while True:
+        yield gen+2
+        gen =gen*2
+v = some(gen(2))
+
+print(gen(2))
+print(some(gen(2)))
 
 
