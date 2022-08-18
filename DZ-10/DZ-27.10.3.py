@@ -4,4 +4,4 @@ def is_even(a):
         return True
     else:
         return False
-print(is_even(7))
+print(is_even(5))
