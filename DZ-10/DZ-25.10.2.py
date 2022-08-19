@@ -2,11 +2,11 @@
 def gen(n):
     n = n**2
     return n
-def some(start, gen, a):
+def some(start,a, gen):
     while start <= a  :
         yield start
         start =gen(start)
-v = some(2, gen, 256)
+v = some(2, 256, gen)
 
 
 
