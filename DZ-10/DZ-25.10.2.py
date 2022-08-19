@@ -10,6 +10,7 @@ v = some(2, gen, 256)
 
 
 
+
 print(next(v))
 print (0)
 print(next(v))
