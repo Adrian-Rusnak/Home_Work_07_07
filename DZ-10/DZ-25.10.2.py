@@ -1,14 +1,19 @@
 
 def gen(n):
-    n = n**n
-def some(gen):
-    while True:
-        yield gen+2
-        gen =gen*2
-v = some(gen(2))
+    n = n**2
+    return n
+def some(start, gen, a):
+    while start <= a  :
+        yield start
+        start =gen(start)
+v = some(2, gen, 256)
 
 
-print(gen(2))
-print(some(gen(2)))
 
-
+print(next(v))
+print (0)
+print(next(v))
+print (0)
+print(next(v))
+print (0)
+print(next(v))
